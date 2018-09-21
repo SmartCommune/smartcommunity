@@ -1,0 +1,2 @@
+# SmartCommunity
+Our cool project
