@@ -14,6 +14,7 @@
         <input type="password" id="password" placeholder="Password" name="password">
     </label>
     <br>
+    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
     <button type="submit">Sign Up</button>
 </form>
 </body>

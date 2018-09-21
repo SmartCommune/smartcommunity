@@ -1,4 +1,4 @@
-package kisit.group471;
+package kisit.group471.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

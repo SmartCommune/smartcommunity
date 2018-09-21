@@ -1,5 +1,6 @@
 package kisit.group471.service;
 
-public class RegistrationService {
-    //TODO todotodotodotodo!!!!!!!!!!!!!!!!
+
+public interface RegistrationService<T> {
+    void registration(T model);
 }

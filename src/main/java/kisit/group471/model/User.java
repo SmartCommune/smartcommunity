@@ -1,14 +1,11 @@
 package kisit.group471.model;
 
-import kisit.group471.transfer.UserDto;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "smart_user")
@@ -28,7 +25,11 @@ public class User {
     @Enumerated(EnumType.STRING)
     private State state;
 
-    public User ofUserDto(UserDto dto) {
-        return new User(dto.getLogin(), dto.getPassword());
+    public User(String login, String hashPassword, Role role, State state) {
+        this.login = login;
+        this.hashPassword = hashPassword;
+        this.role = role;
+        this.state = state;
     }
+
 }
